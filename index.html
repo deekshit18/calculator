@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Calculator</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="./calc.css">
+
+</head>
+<body  class="bg-dark">
+    <div class="container calculator">
+        <input type="text" id="result" readonly>
+        <div class="row">
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('7')">7</button></div>
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('8')">8</button></div>
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('9')">9</button></div>
+            <div class="col-3"><button class="btn btn-warning" onclick="disp('*')">*</button></div>
+        </div>
+        <div class="row">
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('4')">4</button></div>
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('5')">5</button></div>
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('6')">6</button></div>
+            <div class="col-3"><button class="btn btn-warning" onclick="disp('+')">+</button></div>
+        </div>
+        <div class="row">
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('1')">1</button></div>
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('2')">2</button></div>
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('3')">3</button></div>
+            <div class="col-3"><button class="btn btn-warning" onclick="disp('-')">-</button></div>
+        </div>
+        <div class="row">
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('0')">0</button></div>
+            <div class="col-3"><button class="btn btn-secondary" onclick="disp('.')">.</button></div>
+            <div class="col-3"><button class="btn btn-danger" onclick="clearAll()">C</button></div>
+
+            <div class="col-3"><button class="btn btn-warning" onclick="disp('/')">/</button></div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            <button class="btn btn-danger" onclick="back()"><i class="fas fa-backspace"></i></button></div>
+<div class="col-9"><button class="btn btn-danger" onclick="equal()">=</button></div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions (as in the previous example)
+    </script>
+</body>
+<script src="./calc.js"></script>
+
+</html>
